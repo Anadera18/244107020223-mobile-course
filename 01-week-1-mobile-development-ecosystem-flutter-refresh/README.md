@@ -11,26 +11,26 @@
 # Practicum
 Preparing for the environment
 
-![alt text](<screenshot\Screenshot 2026-08-30 192120.png>)
-![alt text](<screenshot\Screenshot 2026-08-30 195558.png>)
-![alt text](<screenshot\Screenshot 2026-08-30 192845.png>)
+![alt text](<screenshot/Screenshot 2026-08-30 192120.png>)
+![alt text](<screenshot/Screenshot 2026-08-30 195558.png>)
+![alt text](<screenshot/Screenshot 2026-08-30 192845.png>)
 
 # Target Device
 flutter devices 
-![alt text](screenshot\flutterdevices.png)
+![alt text](screenshot/flutterdevices.png)
 
 
 ## First Fluterr App
 Create and running the projectflutter devices
 
-![alt text](screenshot\Screenshot 2026-08-30 200047.png)
+![alt text](screenshot/Screenshot 2026-08-30 200047.png)
 
 ### Mobile UI
-![alt text](screenshot\1.png)
+![alt text](screenshot/1.png)
 
 ## Mini assignment
 ### Adding nim
-![alt text](screenshot\image.png)
+![alt text](screenshot/image.png)
 
 
 ---
