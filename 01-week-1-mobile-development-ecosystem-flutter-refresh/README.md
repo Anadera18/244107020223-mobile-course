@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # Jobsheet: Matkul Mobile Development Week 1
 
 | **Informasi** | **Detail** |
@@ -57,5 +55,3 @@ In declarative UI (Flutter), the UI is a function of state. When state changes, 
 
 ---
 
-
->>>>>>> b5ef948 (fix entagled readme in jb1)
