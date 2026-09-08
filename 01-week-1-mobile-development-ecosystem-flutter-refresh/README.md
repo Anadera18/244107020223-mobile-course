@@ -11,36 +11,27 @@
 # Practicum
 Preparing for the environment
 
-![](./screenshot/Pasted%20image%2020260830192124.png)
-![](./screenshot/Pasted%20image%2020260830195602.png)
-![](./screenshot/Pasted%20image%2020260830192853.png)
+![](<screenshot\Screenshot 2026-08-30 192120.png>)
+![](<screenshot\Screenshot 2026-08-30 195558.png>)
+![](<screenshot\Screenshot 2026-08-30 192845.png>)
 
 # Target Device
 flutter devices 
-<img width="1453" height="267" alt="image" src="https://github.com/user-attachments/assets/368ff32f-ce45-49ca-87a9-a096583d280a" />
+![](screenshot\flutterdevices.png)
 
 
 ## First Fluterr App
 Create and running the projectflutter devices
 
-![](./screenshot/Pasted%20image%2020260830200441.png)
-![](./screenshot/Pasted%20image%2020260830200943.png)
+![](screenshot\Screenshot 2026-08-30 200047.png)
 
-lib main code
-
-![](./screenshot/Pasted%20image%2020260830201902.png)
-
-Mobile UI
-![](./screenshot/WhatsApp%20Image%202026-08-30%20at%2020.16.00.jpeg)
-
-Push the my_first_app folder to github
-![](./screenshot/Pasted%20image%2020260830203641.png)
-![](./screenshot/Pasted%20image%2020260830205756.png)
+### Mobile UI
+![](screenshot\1.png)
 
 ## Mini assignment
-Adding nim
-![](./screenshot/Pasted%20image%2020260830205840.png)
-![](./screenshot/Pasted%20image%2020260830210111.png)
+### Adding nim
+![](screenshot\image.png)
+
 
 ---
 # Reflection
