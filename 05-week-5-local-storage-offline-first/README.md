@@ -152,11 +152,11 @@ Full prompt, initial AI output, comparison table, and final decision are in [`do
 
 ## 6. Self-Verification Checklist
 
-- [x] **No direct DB access in UI:** pages only read providers; SQLite and SharedPreferences are accessed in repositories only.
-- [x] **Airplane mode works:** read, add, and delete notes offline.
-- [x] **Dirty badge accurate:** before and after sync; cached posts show without internet.
-- [x] **Clean analysis & tests:** `flutter analyze` has zero issues and all tests pass.
-- [x] **Documented AI output:** in `docs/ai-challenge.md`.
+- [v] **No direct DB access in UI:** pages only read providers; SQLite and SharedPreferences are accessed in repositories only.
+- [v] **Airplane mode works:** read, add, and delete notes offline.
+- [v] **Dirty badge accurate:** before and after sync; cached posts show without internet.
+- [v] **Clean analysis & tests:** `flutter analyze` has zero issues and all tests pass.
+- [v] **Documented AI output:** in `docs/ai-challenge.md`.
 
 ## 7. Reflection
 

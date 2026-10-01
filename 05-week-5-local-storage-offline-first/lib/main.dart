@@ -8,7 +8,7 @@ import 'pages/note_detail_page.dart';
 
 final _router = GoRouter(
   routes: [
-    GoRoute(path: '/', builder: (_, __) => const HomePage()),
+    GoRoute(path: '/', builder: (_, _) => const HomePage()),
     GoRoute(
       path: '/note/:id',
       builder: (_, state) =>
