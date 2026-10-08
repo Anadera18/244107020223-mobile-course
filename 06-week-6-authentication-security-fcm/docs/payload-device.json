@@ -1,0 +1,13 @@
+{
+  "message": {
+    "token": "<DEVICE_FCM_TOKEN>",
+    "notification": {
+      "title": "Your grade was published",
+      "body": "Open the app to see your Mobile Development score"
+    },
+    "data": {
+      "route": "/announcement/2",
+      "id": "2"
+    }
+  }
+}

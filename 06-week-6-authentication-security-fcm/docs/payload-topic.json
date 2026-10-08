@@ -1,0 +1,13 @@
+{
+  "message": {
+    "topic": "campus-announcement",
+    "notification": {
+      "title": "Schedule changed",
+      "body": "Mobile class moved to Room A2 at 1:00 PM"
+    },
+    "data": {
+      "route": "/announcement/3",
+      "id": "3"
+    }
+  }
+}
