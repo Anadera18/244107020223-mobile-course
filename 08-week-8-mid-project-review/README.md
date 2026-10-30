@@ -14,7 +14,7 @@ This continues the Week 7 Offline Notes project. The focused review fix disposes
 
 ## Features and stack
 
-- Offline notes using SQLite and feature-first Clean Architecture.
+- Offline notes in SQLite and Dio announcements follow feature-first Clean Architecture.
 - Announcements fetched through Dio.
 - Riverpod dependency injection, GoRouter, domain failures, and fake-repository tests.
 - Flutter, Dart, flutter_riverpod, sqflite, path, dio, and go_router.
@@ -23,12 +23,8 @@ This continues the Week 7 Offline Notes project. The focused review fix disposes
 
 The app remains in the Week 7 project. Run from that folder:
 
-    cd ..\07-week-7-clean-architecture
-    flutter pub get
-    flutter run
-    flutter analyze
-    dart format --set-exit-if-changed .
-    flutter test
+    cd ..\07-week-7-clean-architecture; flutter pub get; flutter run
+    flutter analyze; dart format --set-exit-if-changed .; flutter test
 
 ## Machine evidence
 
