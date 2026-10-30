@@ -51,4 +51,3 @@ Executed from 07-week-7-clean-architecture:
 Responsible approval checks correctness, error/lifecycle paths, and test evidence. Blind LGTM risks shipping an unverified bug. Request changes for correctness, architecture, or required-test gaps; use a suggestion for optional readability changes.
 
 Rejected the AI suggestion to move blank-title validation into the dialog. AddNote owns the rule and its unit test proves the repository is not called for a blank title; presentation-only validation would leave other callers unprotected.
-
