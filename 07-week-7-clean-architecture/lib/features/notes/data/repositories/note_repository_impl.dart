@@ -39,8 +39,8 @@ class NoteRepositoryImpl implements NoteRepository {
             .toMap(),
       );
       return (
-        note: Note(
-            id: id, title: title, body: body, updatedAt: now, dirty: true),
+        note:
+            Note(id: id, title: title, body: body, updatedAt: now, dirty: true),
         failure: null,
       );
     } catch (e) {
