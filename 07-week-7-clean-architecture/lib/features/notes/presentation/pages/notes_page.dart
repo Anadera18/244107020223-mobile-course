@@ -14,33 +14,42 @@ class NotesPage extends ConsumerWidget {
     final body = TextEditingController();
     final messenger = ScaffoldMessenger.of(context);
 
-    final ok = await showDialog<bool>(
-      context: context,
-      builder: (ctx) => AlertDialog(
-        title: const Text('New note'),
-        content: Column(mainAxisSize: MainAxisSize.min, children: [
-          TextField(
-              controller: title,
-              decoration: const InputDecoration(labelText: 'Title')),
-          TextField(
-              controller: body,
-              decoration: const InputDecoration(labelText: 'Body')),
-        ]),
-        actions: [
-          TextButton(
-              onPressed: () => Navigator.pop(ctx, false),
-              child: const Text('Cancel')),
-          FilledButton(
-              onPressed: () => Navigator.pop(ctx, true),
-              child: const Text('Save')),
-        ],
-      ),
-    );
-    if (ok != true) return;
+    late final bool? ok;
+    String noteTitle;
+    String noteBody;
+    try {
+      ok = await showDialog<bool>(
+        context: context,
+        builder: (ctx) => AlertDialog(
+          title: const Text('New note'),
+          content: Column(mainAxisSize: MainAxisSize.min, children: [
+            TextField(
+                controller: title,
+                decoration: const InputDecoration(labelText: 'Title')),
+            TextField(
+                controller: body,
+                decoration: const InputDecoration(labelText: 'Body')),
+          ]),
+          actions: [
+            TextButton(
+                onPressed: () => Navigator.pop(ctx, false),
+                child: const Text('Cancel')),
+            FilledButton(
+                onPressed: () => Navigator.pop(ctx, true),
+                child: const Text('Save')),
+          ],
+        ),
+      );
+      noteTitle = title.text;
+      noteBody = body.text;
+    } finally {
+      title.dispose();
+      body.dispose();
+    }
+    if (!context.mounted || ok != true) return;
 
-    final result = await ref
-        .read(addNoteProvider)
-        .call(title: title.text, body: body.text);
+    final result =
+        await ref.read(addNoteProvider).call(title: noteTitle, body: noteBody);
     if (result.failure != null) {
       messenger.showSnackBar(SnackBar(content: Text(result.failure!.message)));
       return;
