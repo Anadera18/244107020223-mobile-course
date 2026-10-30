@@ -39,7 +39,8 @@ Executed from 07-week-7-clean-architecture:
 - [x] Focused lifecycle fix and widget tests.
 - [x] README, run guide, screenshot, AI decision evidence, and PR body prepared.
 - [x] Issue #1 created with reproduction steps.
-- [x] Reviewer identified: tiara082.
+- [x] PR #2 opened against pushed develop with the screenshot in the body.
+- [x] Asked tiara082 for review in a PR comment; formal request blocked because they are not a repository collaborator.
 - [ ] Reviewer comments addressed and approved.
 - [ ] PR merged into develop; feature branch deleted afterward.
 
