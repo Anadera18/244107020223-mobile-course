@@ -25,6 +25,18 @@ This week continues the Week 12 project and puts it under automation. The app it
 
 The pipeline implements continuous integration (CI) for the checks and continuous delivery (CD) preparation for the build artifacts. It does not publish to Google Play.
 
+![Week 13 app home screen](screenshots/app-home.png)
+
+## Evidence at a glance
+
+The pipeline is real: pushed to GitHub and green on the runner.
+
+![GitHub Actions run — all steps green](screenshots/github-actions-run.png)
+
+The same checks pass locally before pushing:
+
+![Local CI pipeline](screenshots/local-ci-checks.png)
+
 ## CI/CD flow
 
 1. A push to `main`, a pull request, or a manual dispatch triggers the workflow.
@@ -120,12 +132,18 @@ flutter test --coverage                        All tests passed! (14 tests)     
 flutter test integration_test/app_test.dart -d windows   All tests passed! (1 test)  EXIT=0
 ```
 
-Local captures (real command output):
-[`screenshots/local-ci-checks.png`](screenshots/local-ci-checks.png),
-[`screenshots/dart-format.png`](screenshots/dart-format.png),
-[`screenshots/flutter-analyze.png`](screenshots/flutter-analyze.png),
-[`screenshots/flutter-test-coverage.png`](screenshots/flutter-test-coverage.png),
-[`screenshots/integration-run.png`](screenshots/integration-run.png).
+Local captures (real command output, taken from this workspace):
+
+![Local CI pipeline](screenshots/local-ci-checks.png)
+
+![dart format check](screenshots/dart-format.png)
+
+![flutter analyze](screenshots/flutter-analyze.png)
+
+![flutter test with coverage](screenshots/flutter-test-coverage.png)
+
+![integration test on Windows](screenshots/integration-run.png)
+
 Raw text of the same run: [`screenshots/local-checks.txt`](screenshots/local-checks.txt).
 
 ## The real CI run on GitHub
@@ -186,9 +204,10 @@ The artifact digest recorded by GitHub is `sha256:7a68adfc…23fba7`. Artifacts 
 
 - `.github/workflows/flutter-ci.yml` (in this folder) and `../../.github/workflows/flutter-ci.yml` (the one GitHub runs): the CI/CD workflow.
 - `lib/`, `test/`, `integration_test/`: the Week 12 project carried forward (task feature + performance lab).
+- `test/capture_screenshot.dart`: optional helper that renders `screenshots/app-home.png`; run manually with `flutter test test/capture_screenshot.dart --update-goldens` (kept out of `flutter test`/CI on purpose).
 - `android/`: Android platform added so `flutter build apk`/`appbundle` can run in CI.
 - `coverage/`: real `lcov.info` plus a plain-language summary.
-- `screenshots/`: real terminal and GitHub Actions captures plus raw logs.
+- `screenshots/`: the real app UI, terminal captures, and GitHub Actions run capture, plus the raw logs.
 
 ## Coverage
 
@@ -215,7 +234,7 @@ The CI job runs the same `flutter test --coverage`. Coverage shows which lines r
 
 1. **CI workflow with formatting, analysis, and tests** — added at the repository root `.github/workflows/flutter-ci.yml` (a matching copy is kept in this folder); it runs `dart format --set-exit-if-changed`, `flutter analyze --fatal-infos`, and `flutter test --coverage`.
 2. **APK and AAB stored as artifacts** — both are built in the same job and uploaded as the `android-builds` artifact (`if-no-files-found: error`, `retention-days: 7`).
-3. **Run on a push to `main`, with evidence and commit** — run `45774574719` on commit `b821e6a` completed with the full job passing; evidence is in [`screenshots/github-actions-run.png`](screenshots/github-actions-run.png) and [`screenshots/github-actions-run.txt`](screenshots/github-actions-run.txt).
+3. **Run on a push to `main`, with evidence and commit** — run `45774574719` on commit `b821e6a` completed with the full job passing (see the screenshot above and [`screenshots/github-actions-run.txt`](screenshots/github-actions-run.txt)).
 4. **Version, checks, and remaining risks** — next version `1.0.0+2`; checks are format, analyze, test, APK, AAB; remaining risks are release signing, Play Store configuration, and the fact that CI currently builds release artifacts with the default debug signing (a real release needs a keystore injected through a restricted workflow and GitHub Secrets).
 
 Reproduce locally with the commands in **"Running the same checks locally"**, or trigger the cloud run by pushing a change under `13-week-13-ci-cd-automation/`.
