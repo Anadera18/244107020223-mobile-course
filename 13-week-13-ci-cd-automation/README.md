@@ -27,11 +27,15 @@ The pipeline implements continuous integration (CI) for the checks and continuou
 
 ![Week 13 app home screen](screenshots/app-home.png)
 
+The home screen above is a real screenshot of the running app (captured from the browser via `flutter build web`), not a mock-up.
+
 ## Evidence at a glance
 
 The pipeline is real: pushed to GitHub and green on the runner.
 
-![GitHub Actions run — all steps green](screenshots/github-actions-run.png)
+![GitHub Actions run — success on the GitHub web UI](screenshots/github-actions-run.png)
+
+This is a real screenshot of the run page on github.com, captured from the browser.
 
 The same checks pass locally before pushing:
 
@@ -126,13 +130,13 @@ Real results captured in this workspace:
 
 ```text
 flutter pub get                                Got dependencies!
-dart format --output=none --set-exit-if-changed .   Formatted 9 files (0 changed)  EXIT=0
-flutter analyze --fatal-infos                  No issues found! (ran in 8.0s)  EXIT=0
+dart format --output=none --set-exit-if-changed .   Formatted 10 files (0 changed)  EXIT=0
+flutter analyze --fatal-infos                  No issues found! (ran in 2.3s)  EXIT=0
 flutter test --coverage                        All tests passed! (14 tests)      EXIT=0
 flutter test integration_test/app_test.dart -d windows   All tests passed! (1 test)  EXIT=0
 ```
 
-Local captures (real command output, taken from this workspace):
+Local captures (screenshots of the real terminal window running these commands in this workspace):
 
 ![Local CI pipeline](screenshots/local-ci-checks.png)
 
@@ -169,9 +173,9 @@ Every step passed with real durations:
 | flutter build appbundle --release | success | 12s |
 | upload-artifact@v4 | success | 4s |
 
-![GitHub Actions run](screenshots/github-actions-run.png)
+![GitHub Actions run on the GitHub web UI](screenshots/github-actions-run.png)
 
-Full log and artifact metadata from the run: [`screenshots/github-actions-run.txt`](screenshots/github-actions-run.txt).
+Real screenshot of the run page on github.com (captured from the browser), showing the run summary — commit `b821e6a`, Status **Success**, job `test-and-build` green, and the `android-builds` artifact. Full log and artifact metadata from the run: [`screenshots/github-actions-run.txt`](screenshots/github-actions-run.txt).
 
 ## Artifacts
 
@@ -204,7 +208,7 @@ The artifact digest recorded by GitHub is `sha256:7a68adfc…23fba7`. Artifacts 
 
 - `.github/workflows/flutter-ci.yml` (in this folder) and `../../.github/workflows/flutter-ci.yml` (the one GitHub runs): the CI/CD workflow.
 - `lib/`, `test/`, `integration_test/`: the Week 12 project carried forward (task feature + performance lab).
-- `test/capture_screenshot.dart`: optional helper that renders `screenshots/app-home.png`; run manually with `flutter test test/capture_screenshot.dart --update-goldens` (kept out of `flutter test`/CI on purpose).
+- `test/capture_screenshot.dart`: optional helper that renders a golden PNG of the home screen; run manually with `flutter test test/capture_screenshot.dart --update-goldens` (kept out of `flutter test`/CI on purpose). `screenshots/app-home.png` itself is a real browser capture of the running app, not this golden.
 - `android/`: Android platform added so `flutter build apk`/`appbundle` can run in CI.
 - `coverage/`: real `lcov.info` plus a plain-language summary.
 - `screenshots/`: the real app UI, terminal captures, and GitHub Actions run capture, plus the raw logs.
