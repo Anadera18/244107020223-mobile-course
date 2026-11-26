@@ -3,14 +3,8 @@ name: Flutter CI
 on:
   push:
     branches: [main]
-    paths:
-      - '13-week-13-ci-cd-automation/**'
-      - '.github/workflows/flutter-ci.yml'
   pull_request:
     branches: [main]
-    paths:
-      - '13-week-13-ci-cd-automation/**'
-      - '.github/workflows/flutter-ci.yml'
   workflow_dispatch:
 
 permissions:
@@ -19,10 +13,6 @@ permissions:
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
-
-defaults:
-  run:
-    working-directory: 13-week-13-ci-cd-automation
 
 jobs:
   test-and-build:
@@ -42,7 +32,7 @@ jobs:
         with:
           name: android-builds
           path: |
-            13-week-13-ci-cd-automation/build/app/outputs/flutter-apk/app-release.apk
-            13-week-13-ci-cd-automation/build/app/outputs/bundle/release/app-release.aab
+            build/app/outputs/flutter-apk/app-release.apk
+            build/app/outputs/bundle/release/app-release.aab
           if-no-files-found: error
           retention-days: 7
