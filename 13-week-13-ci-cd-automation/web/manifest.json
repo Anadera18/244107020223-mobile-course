@@ -1,0 +1,35 @@
+{
+    "name": "week13_ci_cd_automation",
+    "short_name": "Week 13 CI/CD Lab",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#176B5B",
+    "theme_color": "#176B5B",
+    "description": "Week 13 CI/CD automation lab.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}

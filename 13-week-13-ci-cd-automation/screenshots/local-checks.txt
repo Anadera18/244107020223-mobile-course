@@ -1,0 +1,50 @@
+# Week 13 local CI checks (real output captured on this machine)
+# Flutter 3.47.2
+
+===== flutter pub get =====
+Resolving dependencies...
+Downloading packages...
+  flutter_lints 5.0.0 (6.0.0 available)
+  lints 5.1.1 (6.1.0 available)
+  material_color_utilities 0.13.0 (0.13.1 available)
+  test_api 0.7.12 (0.7.15 available)
+Got dependencies!
+4 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+
+===== dart format --output=none --set-exit-if-changed . =====
+Formatted 9 files (0 changed) in 0.02 seconds.
+EXIT=0
+
+===== flutter analyze --fatal-infos =====
+Analyzing 13-week-13-ci-cd-automation...                        
+No issues found! (ran in 2.1s)
+EXIT=0
+
+===== flutter test --coverage --reporter expanded =====
+00:00 +0: loading C:/WiseBrilliance/Mobile_Development/13-week-13-ci-cd-automation/test/is_valid_task_title_test.dart
+00:00 +0: C:/WiseBrilliance/Mobile_Development/13-week-13-ci-cd-automation/test/task_service_test.dart: TaskService.loadTasks returns data from the repository
+00:00 +1: C:/WiseBrilliance/Mobile_Development/13-week-13-ci-cd-automation/test/task_service_test.dart: TaskService.loadTasks returns an empty list when there are no tasks
+00:00 +2: C:/WiseBrilliance/Mobile_Development/13-week-13-ci-cd-automation/test/task_service_test.dart: TaskService.loadTasks propagates an error instead of hiding it as an empty list
+00:00 +3: C:/WiseBrilliance/Mobile_Development/13-week-13-ci-cd-automation/test/task_service_test.dart: InMemoryTaskRepository returns a copy that cannot mutate the stored list
+00:00 +4: C:/WiseBrilliance/Mobile_Development/13-week-13-ci-cd-automation/test/is_valid_task_title_test.dart: isValidTaskTitle accepts a title with text
+00:01 +5: C:/WiseBrilliance/Mobile_Development/13-week-13-ci-cd-automation/test/is_valid_task_title_test.dart: isValidTaskTitle rejects empty or whitespace-only text
+00:01 +6: C:/WiseBrilliance/Mobile_Development/13-week-13-ci-cd-automation/test/is_valid_task_title_test.dart: isValidTaskTitle accepts text surrounded by whitespace
+00:01 +7: C:/WiseBrilliance/Mobile_Development/13-week-13-ci-cd-automation/test/is_valid_task_title_test.dart: isValidTaskTitle treats a single visible character as valid (boundary)
+00:01 +8: C:/WiseBrilliance/Mobile_Development/13-week-13-ci-cd-automation/test/is_valid_task_title_test.dart: isValidTaskTitle rejects an empty string (boundary)
+00:01 +9: C:/WiseBrilliance/Mobile_Development/13-week-13-ci-cd-automation/test/task_widget_test.dart: TaskPage widget shows the page title and empty state on first load
+00:02 +10: C:/WiseBrilliance/Mobile_Development/13-week-13-ci-cd-automation/test/task_widget_test.dart: TaskPage widget renders tasks returned by the repository
+00:02 +11: C:/WiseBrilliance/Mobile_Development/13-week-13-ci-cd-automation/test/task_widget_test.dart: TaskPage widget shows validation feedback for whitespace-only input
+00:02 +12: C:/WiseBrilliance/Mobile_Development/13-week-13-ci-cd-automation/test/task_widget_test.dart: TaskPage widget adds a task on a successful user action
+00:02 +13: C:/WiseBrilliance/Mobile_Development/13-week-13-ci-cd-automation/test/task_widget_test.dart: TaskPage widget shows an error state when the repository throws
+00:02 +14: All tests passed!
+EXIT=0
+
+===== flutter test integration_test/app_test.dart -d windows =====
+00:00 +0: loading C:/WiseBrilliance/Mobile_Development/13-week-13-ci-cd-automation/integration_test/app_test.dart
+Building Windows application...                                    17.2s
+Γ£ô Built build\windows\x64\runner\Debug\week13_ci_cd_automation.exe
+00:00 +0: a user opens the task feature and adds a task
+00:01 +1: (tearDownAll)
+00:01 +1: All tests passed!
+EXIT=0

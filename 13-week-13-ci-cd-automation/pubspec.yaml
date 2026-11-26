@@ -1,0 +1,21 @@
+name: week13_ci_cd_automation
+description: Week 13 Flutter CI/CD automation practicum.
+publish_to: 'none'
+version: 1.0.0+2
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
