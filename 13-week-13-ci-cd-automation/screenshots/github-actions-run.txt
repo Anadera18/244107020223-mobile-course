@@ -1,0 +1,544 @@
+# Real GitHub Actions run for Week 13 CI/CD (repository: Anadera18/244107020223-mobile-course)
+# Run: https://github.com/Anadera18/244107020223-mobile-course/actions/runs/45774574719
+# Commit: b821e6a  (branch: main)
+
+=========== gh run view 45774574719 ===========
+
+Γ£ô main Flutter CI (Week 13) ┬╖ 45774574719
+Triggered via push about 5 minutes ago
+
+JOBS
+Γ£ô test-and-build in 4m56s (ID 139755018635)
+
+ANNOTATIONS
+! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+test-and-build: .github#5
+
+! The process '/usr/bin/git' failed with exit code 128
+test-and-build: .github#10
+
+
+ARTIFACTS
+android-builds
+
+For more information about the job, try: gh run view --job=139755018635
+View this run on GitHub: https://github.com/Anadera18/244107020223-mobile-course/actions/runs/45774574719
+
+=========== artifacts ===========
+Unknown JSON field: "artifacts"
+Available fields:
+  attempt
+  conclusion
+  createdAt
+  databaseId
+  displayTitle
+  event
+  headBranch
+  headSha
+  jobs
+  name
+  number
+  startedAt
+  status
+  updatedAt
+  url
+  workflowDatabaseId
+  workflowName
+
+=========== artifacts (API) ===========
+name=android-builds size=69850924 bytes digest=sha256:7a68adfcfc7d4ff10fabe31f461555f504310f18af02559493bc93c1ee23fba7
+
+=========== downloaded artifact contents ===========
+flutter-apk/app-release.apk   48134406 bytes
+bundle/release/app-release.aab 47582943 bytes
+
+=========== full job log (gh run view --log) ===========
+test-and-build	Set up job	∩╗┐2026-11-26T07:20:28.4004878Z Current runner version: '2.338.2'
+test-and-build	Set up job	2026-11-26T07:20:28.4043689Z ##[group]Runner Image Provisioner
+test-and-build	Set up job	2026-11-26T07:20:28.4045182Z Hosted Compute Agent
+test-and-build	Set up job	2026-11-26T07:20:28.4046165Z Version: 20261111.635
+test-and-build	Set up job	2026-11-26T07:20:28.4047386Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+test-and-build	Set up job	2026-11-26T07:20:28.4048794Z Build Date: 2026-11-11T01:49:01Z
+test-and-build	Set up job	2026-11-26T07:20:28.4050177Z Worker ID: {626d78d5-aac6-457e-a7c8-3fa4a8193854}
+test-and-build	Set up job	2026-11-26T07:20:28.4051544Z Region: eastus
+test-and-build	Set up job	2026-11-26T07:20:28.4052930Z Cloud: Azure
+test-and-build	Set up job	2026-11-26T07:20:28.4053953Z ##[endgroup]
+test-and-build	Set up job	2026-11-26T07:20:28.4056566Z ##[group]Operating System
+test-and-build	Set up job	2026-11-26T07:20:28.4058260Z Ubuntu
+test-and-build	Set up job	2026-11-26T07:20:28.4059137Z 26.04.1
+test-and-build	Set up job	2026-11-26T07:20:28.4060131Z LTS
+test-and-build	Set up job	2026-11-26T07:20:28.4061039Z ##[endgroup]
+test-and-build	Set up job	2026-11-26T07:20:28.4062349Z ##[group]Runner Image
+test-and-build	Set up job	2026-11-26T07:20:28.4063491Z Image: ubuntu-26.04
+test-and-build	Set up job	2026-11-26T07:20:28.4064512Z Version: 20261116.202.1
+test-and-build	Set up job	2026-11-26T07:20:28.4066594Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261116.202/images/ubuntu/Ubuntu2604-Readme.md
+test-and-build	Set up job	2026-11-26T07:20:28.4069840Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261116.202
+test-and-build	Set up job	2026-11-26T07:20:28.4071590Z ##[endgroup]
+test-and-build	Set up job	2026-11-26T07:20:28.4073759Z ##[group]GITHUB_TOKEN Permissions
+test-and-build	Set up job	2026-11-26T07:20:28.4076970Z Contents: read
+test-and-build	Set up job	2026-11-26T07:20:28.4078090Z Metadata: read
+test-and-build	Set up job	2026-11-26T07:20:28.4079002Z ##[endgroup]
+test-and-build	Set up job	2026-11-26T07:20:28.4082382Z Secret source: Actions
+test-and-build	Set up job	2026-11-26T07:20:28.4084133Z Cache mode: write
+test-and-build	Set up job	2026-11-26T07:20:28.4085730Z Prepare workflow directory
+test-and-build	Set up job	2026-11-26T07:20:28.4767585Z Prepare all required actions
+test-and-build	Set up job	2026-11-26T07:20:28.4839385Z Getting action download info
+test-and-build	Set up job	2026-11-26T07:20:28.6904133Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+test-and-build	Set up job	2026-11-26T07:20:28.7851531Z Download action repository 'subosito/flutter-action@v2' (SHA:1a449444c387b1966244ae4d4f8c696479add0b2)
+test-and-build	Set up job	2026-11-26T07:20:28.8836879Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+test-and-build	Set up job	2026-11-26T07:20:29.0724640Z Getting action download info
+test-and-build	Set up job	2026-11-26T07:20:29.1389882Z Download action repository 'actions/cache@v5' (SHA:caa296126883cff596d87d8935842f9db880ef25)
+test-and-build	Set up job	2026-11-26T07:20:29.2967841Z Complete job name: test-and-build
+test-and-build	Run actions/checkout@v4	∩╗┐2026-11-26T07:20:29.3887668Z ##[group]Run actions/checkout@v4
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.3888575Z with:
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.3889083Z   repository: Anadera18/244107020223-mobile-course
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.3893279Z   token: ***
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.3893727Z   ssh-strict: true
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.3894166Z   ssh-user: git
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.3894620Z   persist-credentials: true
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.3895114Z   clean: true
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.3895564Z   sparse-checkout-cone-mode: true
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.3896090Z   fetch-depth: 1
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.3896520Z   fetch-tags: false
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.3896985Z   show-progress: true
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.3897431Z   lfs: false
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.3897846Z   submodules: false
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.3898293Z   set-safe-directory: true
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.3898822Z   allow-unsafe-pr-checkout: false
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.3899590Z ##[endgroup]
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.6702805Z Syncing repository: Anadera18/244107020223-mobile-course
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.6816710Z ##[group]Getting Git version info
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.6818339Z Working directory is '/home/runner/work/244107020223-mobile-course/244107020223-mobile-course'
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.6820506Z [command]/usr/bin/git version
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.6821310Z git version 2.56.1
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.6824025Z ##[endgroup]
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.6830172Z Temporarily overriding HOME='/home/runner/work/_temp/3137284d-57d1-4cda-ac6f-baf6b09fade9' before making global git config changes
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.6832656Z Adding repository directory to the temporary git global config as a safe directory
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.6834837Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/244107020223-mobile-course/244107020223-mobile-course
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.6838050Z Deleting the contents of '/home/runner/work/244107020223-mobile-course/244107020223-mobile-course'
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.6840779Z ##[group]Initializing the repository
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.6856248Z [command]/usr/bin/git init /home/runner/work/244107020223-mobile-course/244107020223-mobile-course
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.6950018Z hint: Using 'master' as the name for the initial branch. This default branch name
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.6951816Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.6953869Z hint: to use in all of your new repositories, which will suppress this warning,
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.6955187Z hint: call:
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.6955734Z hint:
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.6956272Z hint: 	git config --global init.defaultBranch <name>
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.6956896Z hint:
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.6957482Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.6958412Z hint: 'development'. The just-created branch can be renamed via this command:
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.6959480Z hint:
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.6960025Z hint: 	git branch -m <name>
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.6960663Z hint:
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.6961437Z hint: Disable this message with "git config set advice.defaultBranchName false"
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.6968871Z Initialized empty Git repository in /home/runner/work/244107020223-mobile-course/244107020223-mobile-course/.git/
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.6984507Z [command]/usr/bin/git remote add origin https://github.com/Anadera18/244107020223-mobile-course
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.7038954Z ##[endgroup]
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.7040298Z ##[group]Disabling automatic garbage collection
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.7043093Z [command]/usr/bin/git config --local gc.auto 0
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.7077282Z ##[endgroup]
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.7078562Z ##[group]Setting up auth
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.7085464Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.7120000Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.7610838Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.7650206Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.7931044Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.7967741Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.8240676Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.8281079Z ##[endgroup]
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.8290116Z ##[group]Fetching the repository
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:29.8291812Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +b821e6a891e1651b0e5704d14f82d66c6328709c:refs/remotes/origin/main
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:31.1937309Z From https://github.com/Anadera18/244107020223-mobile-course
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:31.1939341Z  * [new ref]         b821e6a891e1651b0e5704d14f82d66c6328709c -> origin/main
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:31.1942814Z ##[endgroup]
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:31.1944473Z ##[group]Determining the checkout info
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:31.1945978Z ##[endgroup]
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:31.1950146Z [command]/usr/bin/git sparse-checkout disable
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:31.2004847Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:31.2037172Z ##[group]Checking out the ref
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:31.2041531Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:31.8530266Z Switched to a new branch 'main'
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:31.8536781Z branch 'main' set up to track 'origin/main'.
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:31.8582460Z ##[endgroup]
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:31.8632340Z [command]/usr/bin/git log -1 --format=%H
+test-and-build	Run actions/checkout@v4	2026-11-26T07:20:31.8657427Z b821e6a891e1651b0e5704d14f82d66c6328709c
+test-and-build	Run subosito/flutter-action@v2	∩╗┐2026-11-26T07:20:31.9039129Z ##[group]Run subosito/flutter-action@v2
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:31.9039733Z with:
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:31.9040150Z   flutter-version: 3.47.2
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:31.9040594Z   channel: stable
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:31.9041004Z   cache: true
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:31.9041418Z   architecture: X64
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:31.9042073Z   pub-cache-path: default
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:31.9042539Z   dry-run: false
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:31.9043031Z   git-source: https://github.com/flutter/flutter.git
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:31.9043593Z ##[endgroup]
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:31.9104179Z ##[start-action display=Make yq tool available on Windows runners;id=__subosito_flutter-action.__run]
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:31.9128676Z ##[end-action id=__subosito_flutter-action.__run;outcome=skipped;conclusion=skipped;duration_ms=0]
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:31.9132054Z ##[start-action display=Make setup script executable;id=__subosito_flutter-action.__run_2]
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:31.9173686Z ##[group]Run chmod +x "$GITHUB_ACTION_PATH/setup.sh"
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:31.9174353Z ^[[36;1mchmod +x "$GITHUB_ACTION_PATH/setup.sh"^[[0m
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:31.9211267Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:31.9212041Z ##[endgroup]
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:31.9334459Z ##[end-action id=__subosito_flutter-action.__run_2;outcome=success;conclusion=success;duration_ms=20]
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:31.9337905Z ##[start-action display=Set action inputs;id=__subosito_flutter-action.flutter-action]
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:31.9384449Z ##[group]Run $GITHUB_ACTION_PATH/setup.sh -p \
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:31.9385100Z ^[[36;1m$GITHUB_ACTION_PATH/setup.sh -p \^[[0m
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:31.9385627Z ^[[36;1m  -n '3.47.2' \^[[0m
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:31.9386067Z ^[[36;1m  -f '' \^[[0m
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:31.9386478Z ^[[36;1m  -a 'X64' \^[[0m
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:31.9386934Z ^[[36;1m  -k '' \^[[0m
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:31.9387339Z ^[[36;1m  -c '' \^[[0m
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:31.9387739Z ^[[36;1m  -l '' \^[[0m
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:31.9388166Z ^[[36;1m  -d 'default' \^[[0m
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:31.9388722Z ^[[36;1m  -g 'https://github.com/flutter/flutter.git' \^[[0m
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:31.9389258Z ^[[36;1m  stable^[[0m
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:31.9419299Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:31.9419885Z ##[endgroup]
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.0881608Z ##[end-action id=__subosito_flutter-action.flutter-action;outcome=success;conclusion=success;duration_ms=154]
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.0887236Z ##[start-action display=Cache Flutter;id=__subosito_flutter-action.cache-flutter]
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.0942431Z ##[group]Run actions/cache@v5
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.0942786Z with:
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.0943093Z   path: /opt/hostedtoolcache/flutter/stable-3.47.2-x64
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.0943612Z   key: flutter-linux-stable-3.47.2-x64-d3b14c876900e553bc736ca19295fc09e3853e8e
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.0944095Z   enableCrossOsArchive: false
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.0944390Z   fail-on-cache-miss: false
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.0944668Z   lookup-only: false
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.0944951Z   save-always: false
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.0945197Z ##[endgroup]
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.3046055Z Cache not found for input keys: flutter-linux-stable-3.47.2-x64-d3b14c876900e553bc736ca19295fc09e3853e8e
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.3160856Z ##[end-action id=__subosito_flutter-action.cache-flutter;outcome=success;conclusion=success;duration_ms=227]
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.3164498Z ##[start-action display=Cache pub dependencies;id=__subosito_flutter-action.cache-pub]
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.5995231Z ##[group]Run actions/cache@v5
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.5995529Z with:
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.5995738Z   path: /home/runner/.pub-cache
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.5996443Z   key: flutter-pub-linux-stable-3.47.2-x64-d3b14c876900e553bc736ca19295fc09e3853e8e-06f8e470d7db6fba9887775867011cd1b972269a2e2bf59d4b5b8453fde648f9
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.5997192Z   enableCrossOsArchive: false
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.5997506Z   fail-on-cache-miss: false
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.5997739Z   lookup-only: false
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.5997962Z   save-always: false
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.5998442Z ##[endgroup]
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.8190885Z Cache not found for input keys: flutter-pub-linux-stable-3.47.2-x64-d3b14c876900e553bc736ca19295fc09e3853e8e-06f8e470d7db6fba9887775867011cd1b972269a2e2bf59d4b5b8453fde648f9
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.8289100Z ##[end-action id=__subosito_flutter-action.cache-pub;outcome=success;conclusion=success;duration_ms=512]
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.8292282Z ##[start-action display=Run setup script;id=__subosito_flutter-action.__run_3]
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.8353679Z ##[group]Run $GITHUB_ACTION_PATH/setup.sh \
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.8354044Z ^[[36;1m$GITHUB_ACTION_PATH/setup.sh \^[[0m
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.8354353Z ^[[36;1m  -n '3.47.2' \^[[0m
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.8354584Z ^[[36;1m  -a 'x64' \^[[0m
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.8354900Z ^[[36;1m  -c '/opt/hostedtoolcache/flutter/stable-3.47.2-x64' \^[[0m
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.8355273Z ^[[36;1m  -d '/home/runner/.pub-cache' \^[[0m
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.8355550Z ^[[36;1m  stable^[[0m
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.8389797Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.8390178Z ##[endgroup]
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.9817450Z   % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.9818403Z                                  Dload  Upload  Total   Spent   Left   Speed
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:32.9818863Z 
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:33.9815088Z   0      0   0      0   0      0      0      0                              0
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:34.9800047Z  20  1.46G  20 310.8M   0      0 311.0M      0   00:04           00:04 310.8M
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:35.9789962Z  42  1.46G  42 638.0M   0      0 319.2M      0   00:04   00:01   00:03 319.1M
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:36.9780669Z  63  1.46G  63 947.8M   0      0 316.2M      0   00:04   00:02   00:02 316.1M
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:37.7065807Z  84  1.46G  84  1.23G   0      0 317.3M      0   00:04   00:03   00:01 317.3M
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:37.7066889Z 100  1.46G 100  1.46G   0      0 317.6M      0   00:04   00:04         317.3M
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:37.7067622Z 100  1.46G 100  1.46G   0      0 317.6M      0   00:04   00:04         317.3M
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:20:37.7068317Z 100  1.46G 100  1.46G   0      0 317.6M      0   00:04   00:04         317.3M
+test-and-build	Run subosito/flutter-action@v2	2026-11-26T07:21:05.6786914Z ##[end-action id=__subosito_flutter-action.__run_3;outcome=success;conclusion=success;duration_ms=32849]
+test-and-build	Run flutter pub get	∩╗┐2026-11-26T07:21:05.6845400Z ##[group]Run flutter pub get
+test-and-build	Run flutter pub get	2026-11-26T07:21:05.6845717Z ^[[36;1mflutter pub get^[[0m
+test-and-build	Run flutter pub get	2026-11-26T07:21:05.6881538Z shell: /usr/bin/bash -e {0}
+test-and-build	Run flutter pub get	2026-11-26T07:21:05.6881805Z env:
+test-and-build	Run flutter pub get	2026-11-26T07:21:05.6882345Z   FLUTTER_ROOT: /opt/hostedtoolcache/flutter/stable-3.47.2-x64/flutter
+test-and-build	Run flutter pub get	2026-11-26T07:21:05.6882743Z   PUB_CACHE: /home/runner/.pub-cache
+test-and-build	Run flutter pub get	2026-11-26T07:21:05.6883037Z ##[endgroup]
+test-and-build	Run flutter pub get	2026-11-26T07:21:09.7406581Z Resolving dependencies...
+test-and-build	Run flutter pub get	2026-11-26T07:21:09.8769151Z Downloading packages...
+test-and-build	Run flutter pub get	2026-11-26T07:21:10.4025156Z   flutter_lints 5.0.0 (6.0.0 available)
+test-and-build	Run flutter pub get	2026-11-26T07:21:10.4025964Z   lints 5.1.1 (6.1.0 available)
+test-and-build	Run flutter pub get	2026-11-26T07:21:10.4026525Z   material_color_utilities 0.13.0 (0.13.1 available)
+test-and-build	Run flutter pub get	2026-11-26T07:21:10.4027209Z   meta 1.18.3 (1.19.0 available)
+test-and-build	Run flutter pub get	2026-11-26T07:21:10.4027765Z   test_api 0.7.12 (0.7.15 available)
+test-and-build	Run flutter pub get	2026-11-26T07:21:10.4028370Z   vector_math 2.4.0 (2.4.4 available)
+test-and-build	Run flutter pub get	2026-11-26T07:21:10.4028977Z Got dependencies!
+test-and-build	Run flutter pub get	2026-11-26T07:21:10.4029709Z 6 packages have newer versions incompatible with dependency constraints.
+test-and-build	Run flutter pub get	2026-11-26T07:21:10.4030740Z Try `flutter pub outdated` for more information.
+test-and-build	Run dart format --output=none --set-exit-if-changed .	∩╗┐2026-11-26T07:21:10.5986801Z ##[group]Run dart format --output=none --set-exit-if-changed .
+test-and-build	Run dart format --output=none --set-exit-if-changed .	2026-11-26T07:21:10.5987321Z ^[[36;1mdart format --output=none --set-exit-if-changed .^[[0m
+test-and-build	Run dart format --output=none --set-exit-if-changed .	2026-11-26T07:21:10.6022159Z shell: /usr/bin/bash -e {0}
+test-and-build	Run dart format --output=none --set-exit-if-changed .	2026-11-26T07:21:10.6022502Z env:
+test-and-build	Run dart format --output=none --set-exit-if-changed .	2026-11-26T07:21:10.6022818Z   FLUTTER_ROOT: /opt/hostedtoolcache/flutter/stable-3.47.2-x64/flutter
+test-and-build	Run dart format --output=none --set-exit-if-changed .	2026-11-26T07:21:10.6023216Z   PUB_CACHE: /home/runner/.pub-cache
+test-and-build	Run dart format --output=none --set-exit-if-changed .	2026-11-26T07:21:10.6023476Z ##[endgroup]
+test-and-build	Run dart format --output=none --set-exit-if-changed .	2026-11-26T07:21:10.6406606Z Formatted 9 files (0 changed) in 0.01 seconds.
+test-and-build	Run flutter analyze --fatal-infos	∩╗┐2026-11-26T07:21:10.6471788Z ##[group]Run flutter analyze --fatal-infos
+test-and-build	Run flutter analyze --fatal-infos	2026-11-26T07:21:10.6472661Z ^[[36;1mflutter analyze --fatal-infos^[[0m
+test-and-build	Run flutter analyze --fatal-infos	2026-11-26T07:21:10.6506456Z shell: /usr/bin/bash -e {0}
+test-and-build	Run flutter analyze --fatal-infos	2026-11-26T07:21:10.6506722Z env:
+test-and-build	Run flutter analyze --fatal-infos	2026-11-26T07:21:10.6507028Z   FLUTTER_ROOT: /opt/hostedtoolcache/flutter/stable-3.47.2-x64/flutter
+test-and-build	Run flutter analyze --fatal-infos	2026-11-26T07:21:10.6507433Z   PUB_CACHE: /home/runner/.pub-cache
+test-and-build	Run flutter analyze --fatal-infos	2026-11-26T07:21:10.6507701Z ##[endgroup]
+test-and-build	Run flutter analyze --fatal-infos	2026-11-26T07:21:10.8303761Z Resolving dependencies...
+test-and-build	Run flutter analyze --fatal-infos	2026-11-26T07:21:10.8571187Z Downloading packages...
+test-and-build	Run flutter analyze --fatal-infos	2026-11-26T07:21:10.8602728Z   flutter_lints 5.0.0 (6.0.0 available)
+test-and-build	Run flutter analyze --fatal-infos	2026-11-26T07:21:10.8603924Z   lints 5.1.1 (6.1.0 available)
+test-and-build	Run flutter analyze --fatal-infos	2026-11-26T07:21:10.8604928Z   material_color_utilities 0.13.0 (0.13.1 available)
+test-and-build	Run flutter analyze --fatal-infos	2026-11-26T07:21:10.8605538Z   meta 1.18.3 (1.19.0 available)
+test-and-build	Run flutter analyze --fatal-infos	2026-11-26T07:21:10.8605970Z   test_api 0.7.12 (0.7.15 available)
+test-and-build	Run flutter analyze --fatal-infos	2026-11-26T07:21:10.8606415Z   vector_math 2.4.0 (2.4.4 available)
+test-and-build	Run flutter analyze --fatal-infos	2026-11-26T07:21:10.8606862Z Got dependencies!
+test-and-build	Run flutter analyze --fatal-infos	2026-11-26T07:21:10.8607452Z 6 packages have newer versions incompatible with dependency constraints.
+test-and-build	Run flutter analyze --fatal-infos	2026-11-26T07:21:10.8608302Z Try `flutter pub outdated` for more information.
+test-and-build	Run flutter analyze --fatal-infos	2026-11-26T07:21:18.9143615Z Analyzing 13-week-13-ci-cd-automation...                        
+test-and-build	Run flutter analyze --fatal-infos	2026-11-26T07:21:18.9144462Z No issues found! (ran in 7.5s)
+test-and-build	Run flutter test --coverage	∩╗┐2026-11-26T07:21:18.9330603Z ##[group]Run flutter test --coverage
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:18.9331206Z ^[[36;1mflutter test --coverage^[[0m
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:18.9377423Z shell: /usr/bin/bash -e {0}
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:18.9377839Z env:
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:18.9378337Z   FLUTTER_ROOT: /opt/hostedtoolcache/flutter/stable-3.47.2-x64/flutter
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:18.9379023Z   PUB_CACHE: /home/runner/.pub-cache
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:18.9379477Z ##[endgroup]
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:19.1186484Z Resolving dependencies...
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:19.1450925Z Downloading packages...
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:19.1485476Z   flutter_lints 5.0.0 (6.0.0 available)
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:19.1486072Z   lints 5.1.1 (6.1.0 available)
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:19.1486580Z   material_color_utilities 0.13.0 (0.13.1 available)
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:19.1487109Z   meta 1.18.3 (1.19.0 available)
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:19.1487584Z   test_api 0.7.12 (0.7.15 available)
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:19.1488042Z   vector_math 2.4.0 (2.4.4 available)
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:19.1488500Z Got dependencies!
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:19.1489967Z 6 packages have newer versions incompatible with dependency constraints.
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:19.1490833Z Try `flutter pub outdated` for more information.
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:19.7990728Z 
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:28.0559327Z ##[group]Γ£à Passing tests
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:28.0561073Z Γ£à /home/runner/work/244107020223-mobile-course/244107020223-mobile-course/13-week-13-ci-cd-automation/test/task_service_test.dart: TaskService.loadTasks returns data from the repository
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:28.0603898Z Γ£à /home/runner/work/244107020223-mobile-course/244107020223-mobile-course/13-week-13-ci-cd-automation/test/task_service_test.dart: TaskService.loadTasks returns an empty list when there are no tasks
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:28.0698787Z Γ£à /home/runner/work/244107020223-mobile-course/244107020223-mobile-course/13-week-13-ci-cd-automation/test/task_service_test.dart: TaskService.loadTasks propagates an error instead of hiding it as an empty list
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:28.0744110Z Γ£à /home/runner/work/244107020223-mobile-course/244107020223-mobile-course/13-week-13-ci-cd-automation/test/task_service_test.dart: InMemoryTaskRepository returns a copy that cannot mutate the stored list
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:29.0663679Z Γ£à /home/runner/work/244107020223-mobile-course/244107020223-mobile-course/13-week-13-ci-cd-automation/test/task_widget_test.dart: TaskPage widget shows the page title and empty state on first load
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:29.1933580Z Γ£à /home/runner/work/244107020223-mobile-course/244107020223-mobile-course/13-week-13-ci-cd-automation/test/is_valid_task_title_test.dart: isValidTaskTitle accepts a title with text
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:29.1958800Z Γ£à /home/runner/work/244107020223-mobile-course/244107020223-mobile-course/13-week-13-ci-cd-automation/test/is_valid_task_title_test.dart: isValidTaskTitle rejects empty or whitespace-only text
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:29.2014051Z Γ£à /home/runner/work/244107020223-mobile-course/244107020223-mobile-course/13-week-13-ci-cd-automation/test/is_valid_task_title_test.dart: isValidTaskTitle accepts text surrounded by whitespace
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:29.2043718Z Γ£à /home/runner/work/244107020223-mobile-course/244107020223-mobile-course/13-week-13-ci-cd-automation/test/is_valid_task_title_test.dart: isValidTaskTitle treats a single visible character as valid (boundary)
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:29.2073737Z Γ£à /home/runner/work/244107020223-mobile-course/244107020223-mobile-course/13-week-13-ci-cd-automation/test/is_valid_task_title_test.dart: isValidTaskTitle rejects an empty string (boundary)
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:29.2758978Z Γ£à /home/runner/work/244107020223-mobile-course/244107020223-mobile-course/13-week-13-ci-cd-automation/test/task_widget_test.dart: TaskPage widget renders tasks returned by the repository
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:29.5361086Z Γ£à /home/runner/work/244107020223-mobile-course/244107020223-mobile-course/13-week-13-ci-cd-automation/test/task_widget_test.dart: TaskPage widget shows validation feedback for whitespace-only input
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:29.6610730Z Γ£à /home/runner/work/244107020223-mobile-course/244107020223-mobile-course/13-week-13-ci-cd-automation/test/task_widget_test.dart: TaskPage widget adds a task on a successful user action
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:29.7264416Z Γ£à /home/runner/work/244107020223-mobile-course/244107020223-mobile-course/13-week-13-ci-cd-automation/test/task_widget_test.dart: TaskPage widget shows an error state when the repository throws
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:30.0825672Z ##[endgroup]
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:30.0825895Z 
+test-and-build	Run flutter test --coverage	2026-11-26T07:21:30.0830888Z ≡ƒÄë 14 tests passed.
+test-and-build	Run flutter build apk --release	∩╗┐2026-11-26T07:21:30.1598578Z ##[group]Run flutter build apk --release
+test-and-build	Run flutter build apk --release	2026-11-26T07:21:30.1598961Z ^[[36;1mflutter build apk --release^[[0m
+test-and-build	Run flutter build apk --release	2026-11-26T07:21:30.1631138Z shell: /usr/bin/bash -e {0}
+test-and-build	Run flutter build apk --release	2026-11-26T07:21:30.1631388Z env:
+test-and-build	Run flutter build apk --release	2026-11-26T07:21:30.1631687Z   FLUTTER_ROOT: /opt/hostedtoolcache/flutter/stable-3.47.2-x64/flutter
+test-and-build	Run flutter build apk --release	2026-11-26T07:21:30.1632323Z   PUB_CACHE: /home/runner/.pub-cache
+test-and-build	Run flutter build apk --release	2026-11-26T07:21:30.1632599Z ##[endgroup]
+test-and-build	Run flutter build apk --release	2026-11-26T07:21:30.3974447Z Resolving dependencies...
+test-and-build	Run flutter build apk --release	2026-11-26T07:21:30.4269435Z Downloading packages...
+test-and-build	Run flutter build apk --release	2026-11-26T07:21:30.4308065Z   flutter_lints 5.0.0 (6.0.0 available)
+test-and-build	Run flutter build apk --release	2026-11-26T07:21:30.4308784Z   lints 5.1.1 (6.1.0 available)
+test-and-build	Run flutter build apk --release	2026-11-26T07:21:30.4309591Z   material_color_utilities 0.13.0 (0.13.1 available)
+test-and-build	Run flutter build apk --release	2026-11-26T07:21:30.4310432Z   meta 1.18.3 (1.19.0 available)
+test-and-build	Run flutter build apk --release	2026-11-26T07:21:30.4310919Z   test_api 0.7.12 (0.7.15 available)
+test-and-build	Run flutter build apk --release	2026-11-26T07:21:30.4311375Z   vector_math 2.4.0 (2.4.4 available)
+test-and-build	Run flutter build apk --release	2026-11-26T07:21:30.4311813Z Got dependencies!
+test-and-build	Run flutter build apk --release	2026-11-26T07:21:30.4312541Z 6 packages have newer versions incompatible with dependency constraints.
+test-and-build	Run flutter build apk --release	2026-11-26T07:21:30.4313371Z Try `flutter pub outdated` for more information.
+test-and-build	Run flutter build apk --release	2026-11-26T07:21:38.1556961Z Running Gradle task 'assembleRelease'...                        
+test-and-build	Run flutter build apk --release	2026-11-26T07:21:38.1579262Z WARNING: A restricted method in java.lang.System has been called
+test-and-build	Run flutter build apk --release	2026-11-26T07:21:38.1593024Z WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/home/runner/.gradle/wrapper/dists/gradle-9.3.1-all/9ot9r568e8zfvvd4mn8rbu1j0/gradle-9.3.1/lib/native-platform-0.22-milestone-29.jar)
+test-and-build	Run flutter build apk --release	2026-11-26T07:21:38.1595261Z WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+test-and-build	Run flutter build apk --release	2026-11-26T07:21:38.1596078Z WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+test-and-build	Run flutter build apk --release	2026-11-26T07:21:38.1596672Z 
+test-and-build	Run flutter build apk --release	2026-11-26T07:22:58.0993773Z Loading package information...                                                  
+test-and-build	Run flutter build apk --release	2026-11-26T07:22:58.1971685Z Loading local repository...                                                     
+test-and-build	Run flutter build apk --release	2026-11-26T07:22:58.1980113Z [                                       ] 3% Loading local repository...        
+test-and-build	Run flutter build apk --release	2026-11-26T07:22:58.7039600Z [                                       ] 3% Fetch remote repository...         
+test-and-build	Run flutter build apk --release	2026-11-26T07:22:59.2973036Z [=                                      ] 3% Fetch remote repository...         
+test-and-build	Run flutter build apk --release	2026-11-26T07:22:59.3973062Z [=                                      ] 4% Fetch remote repository...         
+test-and-build	Run flutter build apk --release	2026-11-26T07:22:59.4972701Z [=                                      ] 5% Fetch remote repository...         
+test-and-build	Run flutter build apk --release	2026-11-26T07:22:59.5002612Z [==                                     ] 5% Fetch remote repository...         
+test-and-build	Run flutter build apk --release	2026-11-26T07:22:59.6964830Z [==                                     ] 6% Fetch remote repository...         
+test-and-build	Run flutter build apk --release	2026-11-26T07:22:59.9003199Z [==                                     ] 7% Fetch remote repository...         
+test-and-build	Run flutter build apk --release	2026-11-26T07:22:59.9009560Z [==                                     ] 7% Computing updates...               
+test-and-build	Run flutter build apk --release	2026-11-26T07:22:59.9010299Z [===                                    ] 8% Computing updates...               
+test-and-build	Run flutter build apk --release	2026-11-26T07:22:59.9963588Z [===                                    ] 10% Computing updates...              
+test-and-build	Run flutter build apk --release	2026-11-26T07:22:59.9964764Z [===                                    ] 10% Installing NDK (Side by side) 28.2
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:00.1992596Z [===                                    ] 10% Downloading android-ndk-r28c-linux
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:00.2982937Z [====                                   ] 10% Downloading android-ndk-r28c-linux
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:00.3963720Z [====                                   ] 11% Downloading android-ndk-r28c-linux
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:00.4964210Z [====                                   ] 12% Downloading android-ndk-r28c-linux
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:00.4966025Z [=====                                  ] 13% Downloading android-ndk-r28c-linux
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:00.5965495Z [=====                                  ] 14% Downloading android-ndk-r28c-linux
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:00.5967108Z [=====                                  ] 15% Downloading android-ndk-r28c-linux
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:00.6965072Z [======                                 ] 15% Downloading android-ndk-r28c-linux
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:00.6966307Z [======                                 ] 16% Downloading android-ndk-r28c-linux
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:00.7966856Z [======                                 ] 17% Downloading android-ndk-r28c-linux
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:00.7968418Z [=======                                ] 18% Downloading android-ndk-r28c-linux
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:00.8965193Z [=======                                ] 19% Downloading android-ndk-r28c-linux
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:00.8966343Z [=======                                ] 20% Downloading android-ndk-r28c-linux
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:00.9963471Z [========                               ] 20% Downloading android-ndk-r28c-linux
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:00.9966546Z [========                               ] 21% Downloading android-ndk-r28c-linux
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:01.0963778Z [========                               ] 22% Downloading android-ndk-r28c-linux
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:01.1965525Z [=========                              ] 23% Downloading android-ndk-r28c-linux
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:01.1966913Z [=========                              ] 24% Downloading android-ndk-r28c-linux
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:01.2964463Z [=========                              ] 25% Downloading android-ndk-r28c-linux
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:01.2965843Z [==========                             ] 25% Downloading android-ndk-r28c-linux
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:01.3963746Z [==========                             ] 26% Downloading android-ndk-r28c-linux
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:01.3964977Z [==========                             ] 27% Downloading android-ndk-r28c-linux
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:01.4964378Z [===========                            ] 28% Downloading android-ndk-r28c-linux
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:01.6051424Z [===========                            ] 29% Downloading android-ndk-r28c-linux
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:01.6052632Z [===========                            ] 30% Downloading android-ndk-r28c-linux
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:01.6965042Z [============                           ] 30% Downloading android-ndk-r28c-linux
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:01.6966432Z [============                           ] 31% Downloading android-ndk-r28c-linux
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:01.7964387Z [============                           ] 32% Downloading android-ndk-r28c-linux
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:01.7965649Z [============                           ] 33% Downloading android-ndk-r28c-linux
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:02.2972066Z [============                           ] 33% Unzipping...                      
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:02.2979681Z [============                           ] 33% Unzipping... android-ndk-r28c/    
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:02.2980698Z [============                           ] 33% Unzipping... android-ndk-r28c/READ
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:02.2981526Z [=============                          ] 33% Unzipping... android-ndk-r28c/READ
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:02.2982594Z [=============                          ] 33% Unzipping... android-ndk-r28c/meta
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:02.3965645Z [=============                          ] 33% Unzipping... android-ndk-r28c/shad
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:02.3976992Z [=============                          ] 33% Unzipping... android-ndk-r28c/ndk-
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:02.3978105Z [=============                          ] 33% Unzipping... android-ndk-r28c/wrap
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:02.3979066Z [=============                          ] 33% Unzipping... android-ndk-r28c/ndk-
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:02.8963207Z [=============                          ] 33% Unzipping... android-ndk-r28c/tool
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:03.3962946Z [=============                          ] 34% Unzipping... android-ndk-r28c/tool
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:03.5963333Z [=============                          ] 35% Unzipping... android-ndk-r28c/tool
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:03.8964246Z [==============                         ] 35% Unzipping... android-ndk-r28c/tool
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:04.2963310Z [==============                         ] 36% Unzipping... android-ndk-r28c/tool
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:04.7963413Z [==============                         ] 37% Unzipping... android-ndk-r28c/tool
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:05.1973109Z [===============                        ] 38% Unzipping... android-ndk-r28c/tool
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:05.6964063Z [===============                        ] 39% Unzipping... android-ndk-r28c/tool
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:05.8964189Z [===============                        ] 40% Unzipping... android-ndk-r28c/tool
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:06.0964241Z [================                       ] 40% Unzipping... android-ndk-r28c/tool
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:06.5964280Z [================                       ] 41% Unzipping... android-ndk-r28c/tool
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:06.9965094Z [================                       ] 42% Unzipping... android-ndk-r28c/tool
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:07.7964996Z [=================                      ] 43% Unzipping... android-ndk-r28c/tool
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:08.2964410Z [=================                      ] 44% Unzipping... android-ndk-r28c/tool
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:08.5965139Z [=================                      ] 45% Unzipping... android-ndk-r28c/tool
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:09.1983121Z [==================                     ] 45% Unzipping... android-ndk-r28c/tool
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:09.6963574Z [==================                     ] 46% Unzipping... android-ndk-r28c/tool
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:10.0964277Z [==================                     ] 47% Unzipping... android-ndk-r28c/tool
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:10.4964376Z [===================                    ] 48% Unzipping... android-ndk-r28c/tool
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:11.0963792Z [===================                    ] 49% Unzipping... android-ndk-r28c/tool
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:11.3963270Z [===================                    ] 50% Unzipping... android-ndk-r28c/tool
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:11.5962805Z [====================                   ] 50% Unzipping... android-ndk-r28c/tool
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:11.9963878Z [====================                   ] 51% Unzipping... android-ndk-r28c/tool
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:12.3963078Z [====================                   ] 52% Unzipping... android-ndk-r28c/tool
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:12.7962876Z [=====================                  ] 53% Unzipping... android-ndk-r28c/tool
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:13.0964310Z [=====================                  ] 54% Unzipping... android-ndk-r28c/tool
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:13.0965277Z [=====================                  ] 54% Unzipping... android-ndk-r28c/buil
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:13.2965652Z [=====================                  ] 54% Unzipping... android-ndk-r28c/sour
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:13.2966871Z [=====================                  ] 54% Unzipping... android-ndk-r28c/NOTI
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:13.2970740Z [=====================                  ] 54% Unzipping... android-ndk-r28c/ndk-
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:13.2971678Z [=====================                  ] 54% Unzipping... android-ndk-r28c/NOTI
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:13.2972640Z [=====================                  ] 54% Unzipping... android-ndk-r28c/pyth
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:13.3963531Z [=====================                  ] 54% Unzipping... android-ndk-r28c/preb
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:13.3964467Z [=====================                  ] 54% Unzipping... android-ndk-r28c/ndk-
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:13.3965764Z [=====================                  ] 54% Unzipping... android-ndk-r28c/sour
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:13.3966823Z [=====================                  ] 54% Unzipping... android-ndk-r28c/simp
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:13.5963776Z [=====================                  ] 55% Unzipping... android-ndk-r28c/simp
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:13.6962808Z [=====================                  ] 55% Unzipping... android-ndk-r28c/CHAN
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:13.6963861Z [=======================================] 100% Unzipping... android-ndk-r28c/CHA
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:13.9963239Z 
+test-and-build	Run flutter build apk --release	2026-11-26T07:23:40.4004229Z Font asset "MaterialIcons-Regular.otf" was tree-shaken, reducing it from 1645184 to 3520 bytes (99.8% reduction). Tree-shaking can be disabled by providing the --no-tree-shake-icons flag when building your app.
+test-and-build	Run flutter build apk --release	2026-11-26T07:24:04.4969694Z Caught exception: Already watching path: /home/runner/work/244107020223-mobile-course/244107020223-mobile-course/13-week-13-ci-cd-automation/android
+test-and-build	Run flutter build apk --release	2026-11-26T07:24:50.8106853Z Running Gradle task 'assembleRelease'...                          200.1s
+test-and-build	Run flutter build apk --release	2026-11-26T07:24:51.5192908Z Γ£ô Built build/app/outputs/flutter-apk/app-release.apk (48.1MB)
+test-and-build	Run flutter build appbundle --release	∩╗┐2026-11-26T07:24:51.5347558Z ##[group]Run flutter build appbundle --release
+test-and-build	Run flutter build appbundle --release	2026-11-26T07:24:51.5348329Z ^[[36;1mflutter build appbundle --release^[[0m
+test-and-build	Run flutter build appbundle --release	2026-11-26T07:24:51.5395816Z shell: /usr/bin/bash -e {0}
+test-and-build	Run flutter build appbundle --release	2026-11-26T07:24:51.5396232Z env:
+test-and-build	Run flutter build appbundle --release	2026-11-26T07:24:51.5396817Z   FLUTTER_ROOT: /opt/hostedtoolcache/flutter/stable-3.47.2-x64/flutter
+test-and-build	Run flutter build appbundle --release	2026-11-26T07:24:51.5397517Z   PUB_CACHE: /home/runner/.pub-cache
+test-and-build	Run flutter build appbundle --release	2026-11-26T07:24:51.5397957Z ##[endgroup]
+test-and-build	Run flutter build appbundle --release	2026-11-26T07:24:51.7754657Z Resolving dependencies...
+test-and-build	Run flutter build appbundle --release	2026-11-26T07:24:51.8016798Z Downloading packages...
+test-and-build	Run flutter build appbundle --release	2026-11-26T07:24:51.8044507Z   flutter_lints 5.0.0 (6.0.0 available)
+test-and-build	Run flutter build appbundle --release	2026-11-26T07:24:51.8045011Z   lints 5.1.1 (6.1.0 available)
+test-and-build	Run flutter build appbundle --release	2026-11-26T07:24:51.8045465Z   material_color_utilities 0.13.0 (0.13.1 available)
+test-and-build	Run flutter build appbundle --release	2026-11-26T07:24:51.8045982Z   meta 1.18.3 (1.19.0 available)
+test-and-build	Run flutter build appbundle --release	2026-11-26T07:24:51.8046406Z   test_api 0.7.12 (0.7.15 available)
+test-and-build	Run flutter build appbundle --release	2026-11-26T07:24:51.8046802Z   vector_math 2.4.0 (2.4.4 available)
+test-and-build	Run flutter build appbundle --release	2026-11-26T07:24:51.8047062Z Got dependencies!
+test-and-build	Run flutter build appbundle --release	2026-11-26T07:24:51.8047394Z 6 packages have newer versions incompatible with dependency constraints.
+test-and-build	Run flutter build appbundle --release	2026-11-26T07:24:51.8047915Z Try `flutter pub outdated` for more information.
+test-and-build	Run flutter build appbundle --release	2026-11-26T07:24:52.5383128Z Running Gradle task 'bundleRelease'...                          
+test-and-build	Run flutter build appbundle --release	2026-11-26T07:24:52.5394674Z WARNING: A restricted method in java.lang.System has been called
+test-and-build	Run flutter build appbundle --release	2026-11-26T07:24:52.5414954Z WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/home/runner/.gradle/wrapper/dists/gradle-9.3.1-all/9ot9r568e8zfvvd4mn8rbu1j0/gradle-9.3.1/lib/native-platform-0.22-milestone-29.jar)
+test-and-build	Run flutter build appbundle --release	2026-11-26T07:24:52.5420547Z WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+test-and-build	Run flutter build appbundle --release	2026-11-26T07:24:52.5424617Z WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+test-and-build	Run flutter build appbundle --release	2026-11-26T07:24:52.5432303Z 
+test-and-build	Run flutter build appbundle --release	2026-11-26T07:24:55.1628604Z Caught exception: Already watching path: /home/runner/work/244107020223-mobile-course/244107020223-mobile-course/13-week-13-ci-cd-automation/android
+test-and-build	Run flutter build appbundle --release	2026-11-26T07:25:00.1566979Z Running Gradle task 'bundleRelease'...                              8.1s
+test-and-build	Run flutter build appbundle --release	2026-11-26T07:25:03.2079335Z Γ£ô Built build/app/outputs/bundle/release/app-release.aab (47.6MB)
+test-and-build	Run actions/upload-artifact@v4	∩╗┐2026-11-26T07:25:03.2253385Z ##[group]Run actions/upload-artifact@v4
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:03.2253699Z with:
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:03.2253892Z   name: android-builds
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:03.2254568Z   path: 13-week-13-ci-cd-automation/build/app/outputs/flutter-apk/app-release.apk
+test-and-build	Run actions/upload-artifact@v4	13-week-13-ci-cd-automation/build/app/outputs/bundle/release/app-release.aab
+test-and-build	Run actions/upload-artifact@v4	
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:03.2255289Z   if-no-files-found: error
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:03.2255519Z   retention-days: 7
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:03.2255724Z   compression-level: 6
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:03.2255937Z   overwrite: false
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:03.2256146Z   include-hidden-files: false
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:03.2256375Z env:
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:03.2256658Z   FLUTTER_ROOT: /opt/hostedtoolcache/flutter/stable-3.47.2-x64/flutter
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:03.2257035Z   PUB_CACHE: /home/runner/.pub-cache
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:03.2257301Z ##[endgroup]
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:03.3953129Z (node:3842) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:03.3954434Z (Use `node --trace-deprecation ...` to show where the warning was created)
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:03.4012325Z Multiple search paths detected. Calculating the least common ancestor of all paths
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:03.4028981Z The least common ancestor is /home/runner/work/244107020223-mobile-course/244107020223-mobile-course/13-week-13-ci-cd-automation/build/app/outputs. This will be the root directory of the artifact
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:03.4030757Z With the provided path, there will be 2 files uploaded
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:03.4032093Z Artifact name is valid!
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:03.4032629Z Root directory input is valid!
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:03.5969377Z Beginning upload of artifact content to blob storage
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:04.1548532Z (node:3842) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:04.3953296Z Uploaded bytes 8388608
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:04.8303592Z Uploaded bytes 16777216
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:05.4012484Z Uploaded bytes 25165824
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:05.5686687Z Uploaded bytes 33554432
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:05.8309959Z Uploaded bytes 41943040
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:06.0504383Z Uploaded bytes 50331648
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:06.3094425Z Uploaded bytes 58720256
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:06.6031701Z Uploaded bytes 67108864
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:06.6981383Z Uploaded bytes 69850924
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:06.7175458Z Finished uploading artifact content to blob storage!
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:06.7178833Z SHA256 digest of uploaded artifact zip is 7a68adfcfc7d4ff10fabe31f461555f504310f18af02559493bc93c1ee23fba7
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:06.7180810Z Finalizing artifact upload
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:07.1223919Z Artifact android-builds.zip successfully finalized. Artifact ID 15096305463
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:07.1225503Z Artifact android-builds has been successfully uploaded! Final size is 69850924 bytes. Artifact ID is 15096305463
+test-and-build	Run actions/upload-artifact@v4	2026-11-26T07:25:07.1235107Z Artifact download URL: https://github.com/Anadera18/244107020223-mobile-course/actions/runs/45774574719/artifacts/15096305463
+test-and-build	Post Run subosito/flutter-action@v2	∩╗┐2026-11-26T07:25:07.1564714Z Post job cleanup.
+test-and-build	Post Run subosito/flutter-action@v2	2026-11-26T07:25:07.1569103Z ##[start-action display=Cache pub dependencies;id=__ff99fc29-a704-4bc5-8cdb-17aaefa89474.cache-pub]
+test-and-build	Post Run subosito/flutter-action@v2	2026-11-26T07:25:07.6186099Z Post job cleanup.
+test-and-build	Post Run subosito/flutter-action@v2	2026-11-26T07:25:07.7814794Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/244107020223-mobile-course/244107020223-mobile-course --files-from manifest.txt --use-compress-program zstdmt
+test-and-build	Post Run subosito/flutter-action@v2	2026-11-26T07:25:09.1329663Z Sent 26328785 of 26328785 (100.0%), 41.0 MBs/sec
+test-and-build	Post Run subosito/flutter-action@v2	2026-11-26T07:25:09.2743323Z Cache saved with key: flutter-pub-linux-stable-3.47.2-x64-d3b14c876900e553bc736ca19295fc09e3853e8e-06f8e470d7db6fba9887775867011cd1b972269a2e2bf59d4b5b8453fde648f9
+test-and-build	Post Run subosito/flutter-action@v2	2026-11-26T07:25:09.2880168Z ##[end-action id=__ff99fc29-a704-4bc5-8cdb-17aaefa89474.cache-pub;outcome=success;conclusion=success;duration_ms=2131]
+test-and-build	Post Run subosito/flutter-action@v2	2026-11-26T07:25:09.2883855Z ##[start-action display=Cache Flutter;id=__ff99fc29-a704-4bc5-8cdb-17aaefa89474.cache-flutter]
+test-and-build	Post Run subosito/flutter-action@v2	2026-11-26T07:25:09.2938251Z Post job cleanup.
+test-and-build	Post Run subosito/flutter-action@v2	2026-11-26T07:25:09.4820354Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/244107020223-mobile-course/244107020223-mobile-course --files-from manifest.txt --use-compress-program zstdmt
+test-and-build	Post Run subosito/flutter-action@v2	2026-11-26T07:25:18.1802262Z Sent 0 of 1717826092 (0.0%), 0.0 MBs/sec
+test-and-build	Post Run subosito/flutter-action@v2	2026-11-26T07:25:19.1823448Z Sent 536870912 of 1717826092 (31.3%), 255.6 MBs/sec
+test-and-build	Post Run subosito/flutter-action@v2	2026-11-26T07:25:20.1832032Z Sent 1073741824 of 1717826092 (62.5%), 340.9 MBs/sec
+test-and-build	Post Run subosito/flutter-action@v2	2026-11-26T07:25:21.1821312Z Sent 1650717228 of 1717826092 (96.1%), 393.2 MBs/sec
+test-and-build	Post Run subosito/flutter-action@v2	2026-11-26T07:25:21.5148733Z Sent 1717826092 of 1717826092 (100.0%), 377.7 MBs/sec
+test-and-build	Post Run subosito/flutter-action@v2	2026-11-26T07:25:21.7132143Z Cache saved with key: flutter-linux-stable-3.47.2-x64-d3b14c876900e553bc736ca19295fc09e3853e8e
+test-and-build	Post Run subosito/flutter-action@v2	2026-11-26T07:25:21.7291833Z ##[end-action id=__ff99fc29-a704-4bc5-8cdb-17aaefa89474.cache-flutter;outcome=success;conclusion=success;duration_ms=12439]
+test-and-build	Post Run actions/checkout@v4	∩╗┐2026-11-26T07:25:21.7412843Z Post job cleanup.
+test-and-build	Post Run actions/checkout@v4	2026-11-26T07:25:21.8354756Z [command]/usr/bin/git version
+test-and-build	Post Run actions/checkout@v4	2026-11-26T07:25:21.8402321Z git version 2.56.1
+test-and-build	Post Run actions/checkout@v4	2026-11-26T07:25:21.8453492Z Temporarily overriding HOME='/home/runner/work/_temp/01547d22-a983-4ad6-9572-8586aeb151da' before making global git config changes
+test-and-build	Post Run actions/checkout@v4	2026-11-26T07:25:21.8456872Z Adding repository directory to the temporary git global config as a safe directory
+test-and-build	Post Run actions/checkout@v4	2026-11-26T07:25:21.8460307Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/244107020223-mobile-course/244107020223-mobile-course
+test-and-build	Post Run actions/checkout@v4	2026-11-26T07:25:21.8508257Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test-and-build	Post Run actions/checkout@v4	2026-11-26T07:25:21.8585649Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test-and-build	Post Run actions/checkout@v4	2026-11-26T07:25:21.8948366Z fatal: No url found for submodule path 'my_first_app' in .gitmodules
+test-and-build	Post Run actions/checkout@v4	2026-11-26T07:25:21.9009870Z ##[warning]The process '/usr/bin/git' failed with exit code 128
+test-and-build	Complete job	∩╗┐2026-11-26T07:25:21.9156940Z Cleaning up orphan processes
+test-and-build	Complete job	2026-11-26T07:25:21.9764716Z Terminate orphan process: pid (3026) (java)
+test-and-build	Complete job	2026-11-26T07:25:21.9819028Z Terminate orphan process: pid (3145) (java)
+test-and-build	Complete job	2026-11-26T07:25:21.9859451Z Terminate orphan process: pid (3436) (java)
+test-and-build	Complete job	2026-11-26T07:25:22.0064807Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
